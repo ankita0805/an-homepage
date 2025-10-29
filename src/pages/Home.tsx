@@ -1,7 +1,6 @@
 import PageLayout from "@/components/PageLayout";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+import { Linkedin, GraduationCap } from "lucide-react";
 import headshotImage from "@/assets/headshot.jpg";
 
 const Home = () => {
@@ -32,13 +31,27 @@ const Home = () => {
               patient outcomes and system reliability.
             </p>
             
-            <div className="flex gap-4 pt-4">
-              <Button asChild size="lg" className="rounded">
-                <Link to="/research">View Research</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="rounded">
-                <Link to="/cv">Download CV</Link>
-              </Button>
+            <div className="flex gap-6 pt-4">
+              <a
+                href="https://linkedin.com/in/yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+                aria-label="LinkedIn Profile"
+              >
+                <Linkedin className="h-5 w-5" />
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+                aria-label="Google Scholar Profile"
+              >
+                <GraduationCap className="h-5 w-5" />
+                <span>Google Scholar</span>
+              </a>
             </div>
           </div>
         </div>
