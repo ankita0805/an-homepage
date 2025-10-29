@@ -96,19 +96,22 @@ const Publications = () => {
     }
   ];
 
-  const PublicationCard = ({ pub, type }: { pub: any; type: string }) => (
-    <Card className="p-6 hover:shadow-lg transition-shadow">
-      <div className="space-y-3">
-        <p className="text-foreground">
-          {pub.authors.split('[Your Name]').map((part: string, i: number) => (
-            <span key={i}>
-              {part}
-              {i < pub.authors.split('[Your Name]').length - 1 && (
-                <strong className="font-bold">[Your Name]</strong>
-              )}
-            </span>
-          ))}
-        </p>
+  const PublicationCard = ({ pub, type }: { pub: any; type: string }) => {
+    const authorField = pub.authors || pub.inventors || "";
+    
+    return (
+      <Card className="p-6 hover:shadow-lg transition-shadow">
+        <div className="space-y-3">
+          <p className="text-foreground">
+            {authorField.split('[Your Name]').map((part: string, i: number) => (
+              <span key={i}>
+                {part}
+                {i < authorField.split('[Your Name]').length - 1 && (
+                  <strong className="font-bold">[Your Name]</strong>
+                )}
+              </span>
+            ))}
+          </p>
         <p className="text-lg font-semibold text-foreground">
           {pub.title}
         </p>
@@ -158,7 +161,8 @@ const Publications = () => {
         )}
       </div>
     </Card>
-  );
+    );
+  };
 
   return (
     <PageLayout>
