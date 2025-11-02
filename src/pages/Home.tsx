@@ -21,14 +21,14 @@ const Home = () => {
             <div>
               <h1 className="mb-2">Ankita Nayak</h1>
               <h2 className="text-xl md:text-2xl text-muted-foreground font-body font-medium">
-                Ph.D. in Electrical & Computer Engineering
+                Ph.D. in Electrical Engineering
               </h2>
             </div>
             
             <p className="text-lg text-foreground leading-relaxed">
-              I develop novel machine learning algorithms for secure and efficient biomedical devices, 
-              advancing the intersection of artificial intelligence and healthcare technology to improve 
-              patient outcomes and system reliability.
+            I am a researcher focused on efficient, on-device artificial intelligence. My work develops novel algorithms for generative AI, efficient fine-tuning, and on-device personalization and co-designs the ML systems and hardware—including model quantization and accelerators—needed to deploy them.
+
+Currently, I am a Technical Lead at Qualcomm AI Research, guiding research in on-device generative AI. I received my PhD in Electrical Engineering from Stanford University, where I continue to serve as Teaching Staff for the Machine Learning on Embedded Systems course. My goal is to bridge the gap between large-scale AI models and practical, low-power systems.
             </p>
             
             <div className="flex gap-6 pt-4">
@@ -63,25 +63,13 @@ const Home = () => {
           <h2 className="mb-8">About Me</h2>
           <div className="space-y-4 text-foreground">
             <p>
-              I am a final-year Ph.D. candidate in the Department of Electrical and Computer Engineering 
-              at [University Name], advised by Professor [Advisor Name]. My research focuses on developing 
-              innovative machine learning methodologies specifically tailored for resource-constrained 
-              biomedical systems, with particular emphasis on real-time patient monitoring and diagnostic 
-              applications.
+              I am a researcher and technical lead with a passion for making advanced artificial intelligence practical, efficient, and capable of running directly on personal devices. My work sits at the intersection of machine learning algorithms, systems, and hardware. I focus on developing novel techniques for on-device generative AI, including efficient fine-tuning, model quantization, and personalization, while simultaneously co-designing the hardware-aware systems needed to support them. I believe the future of AI is not just in the cloud, but in powerful, low-power, and private-by-design models that enhance our daily lives.
             </p>
             <p>
-              Throughout my doctoral studies, I have published extensively in top-tier venues including 
-              IEEE Transactions on Biomedical Engineering and the International Conference on Machine Learning. 
-              My work bridges theoretical advances in neural network compression with practical applications 
-              in wearable medical devices, contributing to both the machine learning and biomedical engineering 
-              communities.
+              Currently, I am a Senior Staff ML Researcher at Qualcomm AI Research, where I lead research on efficient foundation model adaptation and on-device deployment. This role builds on my deep background in systems architecture. Prior to focusing on AI, I was a Technical Lead for Qualcomm's 5G modem, where I led the architecture and design of first-generation 5G transmitter subsystems. My earlier industry experience at Qualcomm and Intel was centered on power-performance-area (PPA) optimization and low-power ASIC design methodologies, giving me a full-stack perspective from transistors up to algorithms.
             </p>
             <p>
-              Beyond research, I am deeply committed to education and mentorship. I have served as a teaching 
-              assistant for undergraduate courses in signal processing and machine learning, and have mentored 
-              five undergraduate researchers in their first independent research projects. I am actively seeking 
-              tenure-track faculty positions where I can continue to advance the field through innovative research 
-              while fostering the next generation of engineers.
+              I received my PhD in Electrical Engineering from Stanford University, where my research explored agile hardware flows and energy-efficient reconfigurable accelerators. I have remained closely connected to the academic community and am passionate about mentorship and teaching. Since 2022, I have served as part of the Teaching Staff at Stanford for the graduate course "Machine Learning on Embedded Systems," where I develop and deliver lectures on state-of-the-art topics and mentor students on their class projects.
             </p>
           </div>
         </div>
@@ -94,28 +82,48 @@ const Home = () => {
           <ul className="space-y-4">
             {[
               {
+                date: "October 2025",
+                text: "Our paper, \"Video Training without Reasoning,\" was submitted to ICLR 2026."
+              },
+              {
+                date: "October 2025",
+                text: "Our paper \"DuoLoRA\" on content-style personalization was presented at the International Conference on Computer Vision (ICCV) 2025."
+              },
+              {
+                date: "July 2025",
+                text: "Our paper \"QuArch: A Question-Answering Dataset\" was accepted for publication in IEEE Computer Architecture Letters."
+              },
+              {
+                date: "June 2025",
+                text: "I co-organized the Hackathon for LLM-assisted Chip Design (ICLAD) at the Design Automation Conference (DAC 2025)."
+              },
+              {
+                date: "March 2025",
+                text: "I returned to Stanford as a Guest Lecturer for EE272 to speak on neural network quantization."
+              },
+              {
                 date: "January 2025",
-                text: "Our paper 'Adaptive Neural Compression for Real-Time ECG Monitoring' was accepted to ICML 2025."
+                text: "I am serving on the Technical Program Committee for the TinyML 2025 International Research Symposium."
               },
               {
-                date: "December 2024",
-                text: "Successfully defended my dissertation proposal: 'Machine Learning for Next-Generation Biomedical Devices'."
+                date: "May 2024",
+                text: "I gave an invited guest lecture at UC Berkeley (EE290-2) on domain-specific ML acceleration for 5G modems."
               },
               {
-                date: "October 2024",
-                text: "Invited to give a talk at the IEEE International Conference on Biomedical Engineering."
+                date: "March 2024",
+                text: "I started a new role as a Technical Lead/Senior Staff ML Researcher at Qualcomm AI Research, focusing on on-device generative AI."
               },
               {
-                date: "September 2024",
-                text: "Received the Outstanding Graduate Research Award from the ECE Department."
+                date: "November 2023",
+                text: "I was an invited guest lecturer at the University of Southern California (EE599) to discuss systems-HW co-design."
               },
               {
-                date: "August 2024",
-                text: "Started serving as a reviewer for IEEE Transactions on Neural Networks and Learning Systems."
+                date: "June 2023",
+                text: "I gave an invited talk at the On-Device Intelligence Workshop at the MLSys 2023 conference in Miami."
               },
             ].map((item, index) => (
               <li key={index} className="flex gap-4">
-                <span className="font-semibold text-primary min-w-[120px]">{item.date}:</span>
+                <span className="font-semibold text-primary min-w-[150px]">{item.date}:</span>
                 <span className="text-foreground">{item.text}</span>
               </li>
             ))}

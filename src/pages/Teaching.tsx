@@ -13,6 +13,14 @@ const Teaching = () => {
       description: "Develop and deliver new lectures on state-of-art topics (e.g., on-device & federated learning, model quantization, DNN hardware, PEFT LoRA), lead class discussions, mentor students in their class projects. Taught 3 offerings of the class."
     },
     {
+      number: "",
+      title: "Spoken Sanskrit",
+      institution: "Samskrita Bharati (501(c)(3) Non-Profit)",
+      role: "Language Instructor",
+      semester: "2013-2016",
+      description: "Taught Sanskrit classes using an immersive methodology focused entirely on spoken Sanskrit, where all participants speak the language 100% of the time. This unique approach facilitates rapid learning through active engagement and differs significantly from traditional language-teaching methods, helping preserve this ancient language."
+    },
+    {
       number: "CSEE W4824",
       title: "Computer Architecture",
       institution: "Columbia University",
@@ -97,7 +105,7 @@ const Teaching = () => {
                   <Card key={index} className="p-6">
                     <div className="mb-3">
                       <h3 className="text-xl mb-2">
-                        {course.number}: {course.title}
+                        {course.number ? `${course.number}: ${course.title}` : course.title}
                       </h3>
                       <p className="text-muted-foreground">
                         {course.institution} | {course.role} | {course.semester}
