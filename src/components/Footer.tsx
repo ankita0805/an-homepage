@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl px-6 py-8">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} [Your Name]. All rights reserved.
+            © {currentYear} Ankita Nayak. All rights reserved.
           </p>
           
           <div className="flex items-center gap-6">

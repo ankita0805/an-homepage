@@ -20,7 +20,7 @@ const Header = () => {
             to="/" 
             className="font-heading text-xl font-bold text-foreground hover:text-primary transition-colors"
           >
-            [Your Name]
+            Ankita Nayak
           </Link>
           
           <ul className="flex items-center gap-8">

@@ -8,6 +8,7 @@ const Teaching = () => {
       title: "Signals and Systems",
       institution: "[University Name]",
       role: "Teaching Assistant",
+      semester: "Fall 2024",
       description: "Undergraduate course covering continuous-time and discrete-time signals, Fourier analysis, Laplace transforms, and z-transforms. Responsibilities included leading weekly recitation sections for 40 students, holding office hours, and grading assignments and exams."
     },
     {
@@ -15,6 +16,7 @@ const Teaching = () => {
       title: "Introduction to Machine Learning",
       institution: "[University Name]",
       role: "Teaching Assistant",
+      semester: "Spring 2024",
       description: "Graduate-level introduction to machine learning fundamentals including supervised learning, neural networks, and optimization algorithms. Led lab sessions on implementing ML algorithms in Python, designed homework problems, and provided individual mentorship to graduate students on course projects."
     },
     {
@@ -22,6 +24,7 @@ const Teaching = () => {
       title: "Biomedical Instrumentation",
       institution: "[University Name]",
       role: "Guest Lecturer",
+      semester: "Fall 2023",
       description: "Delivered three lectures on neural signal processing and brain-computer interfaces as part of this senior-level course. Topics included signal acquisition, filtering techniques, and practical considerations for real-time biomedical systems."
     },
     {
@@ -29,6 +32,7 @@ const Teaching = () => {
       title: "Analog Signal Processing",
       institution: "[University Name]",
       role: "Teaching Assistant",
+      semester: "Spring 2023",
       description: "Sophomore-level course introducing analog circuit design and analysis. Conducted laboratory sessions teaching students to build and test analog circuits, including amplifiers, filters, and oscillators. Supervised hands-on experiments and assisted with circuit debugging."
     }
   ];
@@ -79,7 +83,7 @@ const Teaching = () => {
                     {course.number}: {course.title}
                   </h3>
                   <p className="text-muted-foreground">
-                    {course.institution} | {course.role}
+                    {course.institution} | {course.role} | {course.semester}
                   </p>
                 </div>
                 <p className="text-foreground">{course.description}</p>

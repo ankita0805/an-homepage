@@ -19,7 +19,7 @@ const Home = () => {
           
           <div className="space-y-6">
             <div>
-              <h1 className="mb-2">[Your Name]</h1>
+              <h1 className="mb-2">Ankita Nayak</h1>
               <h2 className="text-xl md:text-2xl text-muted-foreground font-body font-medium">
                 Ph.D. in Electrical & Computer Engineering
               </h2>
