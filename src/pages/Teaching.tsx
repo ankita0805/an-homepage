@@ -48,25 +48,7 @@ const Teaching = () => {
             <h2 className="mb-6 text-2xl">Teaching Philosophy</h2>
             <div className="space-y-4 text-foreground">
               <p>
-                I believe that effective engineering education must bridge theoretical foundations with practical 
-                applications, empowering students to not only understand concepts but to apply them creatively to 
-                real-world problems. In my teaching, I emphasize three core principles: clarity in presenting complex 
-                ideas, engagement through hands-on learning, and fostering a growth mindset that encourages 
-                intellectual curiosity and resilience.
-              </p>
-              <p>
-                My approach is grounded in active learning methodologies. I design lectures that incorporate 
-                interactive elements—from live demonstrations to collaborative problem-solving—ensuring students 
-                are participants rather than passive observers. In laboratory settings, I guide students to discover 
-                solutions through structured inquiry, helping them develop both technical skills and critical thinking 
-                abilities essential for their careers as engineers.
-              </p>
-              <p>
-                Beyond the classroom, I am committed to creating an inclusive learning environment where all students 
-                feel supported and empowered to succeed. I prioritize accessibility in my teaching materials, provide 
-                multiple pathways for students to engage with content, and maintain an open-door policy for students 
-                seeking additional help. My goal is not simply to transfer knowledge, but to inspire the next generation 
-                of engineers to pursue innovative solutions to society's most pressing challenges.
+                My teaching philosophy rests on three foundational pillars: learning from first principles, learning through narrative, and learning by practice. I prioritize deconstructing complex topics to their conceptual core, ensuring students move beyond the "how" to a durable appreciation of the "why," which fosters critical, trend-resistant reasoning. This is complemented by framing lectures as engaging narratives that explore a problem's context, solution, and design, transforming passive learning into an interactive exploration that builds deep intuition. Finally, I champion learning by doing, guiding students through iterative, hands-on problem-solving to build tangible skills and confidence as they connect abstract theory to practical application.
               </p>
             </div>
           </Card>
