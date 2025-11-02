@@ -98,23 +98,10 @@ const Teaching = () => {
             <h2 className="mb-6 text-2xl">Mentoring & Advising</h2>
             <div className="space-y-4 text-foreground">
               <p>
-                Throughout my doctoral studies, I have had the privilege of mentoring five undergraduate researchers, 
-                guiding them through their first independent research projects. These experiences range from summer 
-                research programs to year-long senior thesis projects, covering topics in machine learning for 
-                biosignal processing and embedded systems design.
+              My mentoring philosophy is centered on a personalized, development-focused, and inclusive approach. I believe this method brings out the best in individuals by empowering them to pursue their own paths and contribute meaningfully to their chosen fields. I view every mentoring relationship as unique, defined by the mentee’s goals and stage of growth, and I emphasize active listening and tailored guidance to help them chart their path. I see mentorship as a process of guided growth, helping mentees evolve from learners into independent thinkers. I also believe that innovation thrives on diverse perspectives, so I am committed to creating an inclusive space where every voice can be heard, valued, and given the confidence to realize its potential.
               </p>
               <p>
-                I take a structured yet flexible approach to undergraduate mentorship, beginning with clearly defined 
-                project goals and gradually increasing independence as students develop confidence and skills. Regular 
-                one-on-one meetings ensure students receive personalized guidance while learning to troubleshoot 
-                problems independently. Several of my mentees have gone on to co-author papers, present at conferences, 
-                and pursue graduate studies in top engineering programs.
-              </p>
-              <p>
-                I am also actively involved in departmental outreach initiatives, including serving as a panelist for 
-                prospective graduate student visits and participating in undergraduate research showcases. I believe 
-                strongly in the importance of mentorship in academic success and am committed to continuing this work 
-                as a faculty member, helping students discover and pursue their passion for research and innovation.
+              I have gained mentoring experience across academic and industry settings. As a Teaching Assistant for courses like introductory programming, I learned to adapt to each student's learning style. I currently apply this by mentoring project teams in EE292D, where our meetings extend beyond project milestones to include broader academic and career discussions. At Qualcomm AI Research, mentorship has been a highly rewarding part of my work; I guide individuals on technical concepts and career development, which has led to commercial successes and published research. Over more than a decade, many of my mentees have advanced into technical leadership, pursued Ph.D.s, or secured faculty positions. I also serve as an industry affiliate with various academic institutions to help align their research with real-world applications. Furthermore, I actively mentor women and junior engineers in STEM through initiatives like TechWomen (a U.S. State Department initiative for women in emerging regions) and QWISE (Qualcomm Women in Science & Engineering), supporting their career navigation and leadership development.
               </p>
             </div>
           </Card>
