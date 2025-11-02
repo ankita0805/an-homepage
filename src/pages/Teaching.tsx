@@ -4,36 +4,36 @@ import { Card } from "@/components/ui/card";
 const Teaching = () => {
   const courses = [
     {
-      number: "ECE 301",
-      title: "Signals and Systems",
-      institution: "[University Name]",
-      role: "Teaching Assistant",
-      semester: "Fall 2024",
-      description: "Undergraduate course covering continuous-time and discrete-time signals, Fourier analysis, Laplace transforms, and z-transforms. Responsibilities included leading weekly recitation sections for 40 students, holding office hours, and grading assignments and exams."
+      number: "EE292D/CS329E",
+      title: "Machine Learning on Embedded Systems",
+      institution: "Stanford University",
+      role: "Teaching Staff",
+      semester: "Fall 2022-Present",
+      description: "Develop and deliver new lectures on state-of-art topics (e.g., on-device & federated learning, model quantization, DNN hardware, PEFT LoRA), lead class discussions, mentor students in their class projects. Taught 3 offerings of the class."
     },
     {
-      number: "ECE 542",
-      title: "Introduction to Machine Learning",
-      institution: "[University Name]",
+      number: "CSEE W4824",
+      title: "Computer Architecture",
+      institution: "Columbia University",
       role: "Teaching Assistant",
-      semester: "Spring 2024",
-      description: "Graduate-level introduction to machine learning fundamentals including supervised learning, neural networks, and optimization algorithms. Led lab sessions on implementing ML algorithms in Python, designed homework problems, and provided individual mentorship to graduate students on course projects."
+      semester: "Fall 2010",
+      description: "Assisted with graduate-level computer architecture course covering processor design, memory hierarchies, and parallel computing systems."
     },
     {
-      number: "ECE 445",
-      title: "Biomedical Instrumentation",
-      institution: "[University Name]",
-      role: "Guest Lecturer",
-      semester: "Fall 2023",
-      description: "Delivered three lectures on neural signal processing and brain-computer interfaces as part of this senior-level course. Topics included signal acquisition, filtering techniques, and practical considerations for real-time biomedical systems."
+      number: "CSEE W1005",
+      title: "Introduction to Computer Science and Programming in MATLAB",
+      institution: "Columbia University",
+      role: "Teaching Assistant",
+      semester: "Spring 2010",
+      description: "Supported introductory programming course teaching fundamental computer science concepts and MATLAB programming to undergraduate students."
     },
     {
-      number: "ECE 210",
-      title: "Analog Signal Processing",
-      institution: "[University Name]",
+      number: "CS 3203",
+      title: "Discrete Mathematics: Introduction To Combinatorics and Graph Theory",
+      institution: "Columbia University",
       role: "Teaching Assistant",
-      semester: "Spring 2023",
-      description: "Sophomore-level course introducing analog circuit design and analysis. Conducted laboratory sessions teaching students to build and test analog circuits, including amplifiers, filters, and oscillators. Supervised hands-on experiments and assisted with circuit debugging."
+      semester: "Spring 2010",
+      description: "Assisted with undergraduate discrete mathematics course covering combinatorial analysis, graph theory, and discrete structures."
     }
   ];
 
