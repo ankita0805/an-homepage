@@ -13,7 +13,7 @@ const Footer = () => {
           
           <div className="flex items-center gap-6">
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/nayak-ankita/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -22,7 +22,7 @@ const Footer = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="https://scholar.google.com/citations?user=yourprofile"
+              href="https://scholar.google.com/citations?user=aksRSh0AAAAJ&hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

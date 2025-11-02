@@ -33,7 +33,7 @@ const Home = () => {
             
             <div className="flex gap-6 pt-4">
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/nayak-ankita/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
@@ -43,7 +43,7 @@ const Home = () => {
                 <span>LinkedIn</span>
               </a>
               <a
-                href="https://scholar.google.com/citations?user=yourprofile"
+                href="https://scholar.google.com/citations?user=aksRSh0AAAAJ&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
