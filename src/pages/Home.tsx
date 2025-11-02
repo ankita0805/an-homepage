@@ -26,9 +26,9 @@ const Home = () => {
             </div>
             
             <p className="text-lg text-foreground leading-relaxed">
-            I am a researcher focused on efficient, on-device artificial intelligence. My work develops novel algorithms for generative AI, efficient fine-tuning, and on-device personalization and co-designs the ML systems and hardware—including model quantization and accelerators—needed to deploy them.
-
-Currently, I am a Technical Lead at Qualcomm AI Research, guiding research in on-device generative AI. I received my PhD in Electrical Engineering from Stanford University, where I continue to serve as Teaching Staff for the Machine Learning on Embedded Systems course. My goal is to bridge the gap between large-scale AI models and practical, low-power systems.
+            I am a researcher focused on efficient, on-device artificial intelligence. My work develops novel algorithms for <strong>generative AI</strong>, <strong>efficient fine-tuning</strong>, and <strong>on-device personalization</strong> and co-designs the ML systems and hardware—including <strong>model quantization</strong> and <strong>accelerators</strong>—needed to deploy them.
+<br /><br />
+Currently, I am a Technical Lead at <strong>Qualcomm AI Research</strong>, guiding research in on-device generative AI. I received my PhD in Electrical Engineering from <strong>Stanford University</strong>, where I continue to serve as Teaching Staff for the Machine Learning on Embedded Systems course. My goal is to bridge the gap between large-scale AI models and practical, low-power systems.
             </p>
             
             <div className="flex gap-6 pt-4">
@@ -63,13 +63,13 @@ Currently, I am a Technical Lead at Qualcomm AI Research, guiding research in on
           <h2 className="mb-8">About Me</h2>
           <div className="space-y-4 text-foreground">
             <p>
-              I am a researcher and technical lead with a passion for making advanced artificial intelligence practical, efficient, and capable of running directly on personal devices. My work sits at the intersection of machine learning algorithms, systems, and hardware. I focus on developing novel techniques for on-device generative AI, including efficient fine-tuning, model quantization, and personalization, while simultaneously co-designing the hardware-aware systems needed to support them. I believe the future of AI is not just in the cloud, but in powerful, low-power, and private-by-design models that enhance our daily lives.
+              I am a researcher and technical lead with a passion for making advanced artificial intelligence practical, efficient, and capable of running directly on personal devices. My work sits at the intersection of <strong>machine learning algorithms</strong>, <strong>systems</strong>, and <strong>hardware</strong>. I focus on developing novel techniques for <strong>on-device generative AI</strong>, including efficient fine-tuning, model quantization, and personalization, while simultaneously co-designing the hardware-aware systems needed to support them. I believe the future of AI is not just in the cloud, but in powerful, low-power, and private-by-design models that enhance our daily lives.
             </p>
             <p>
-              Currently, I am a Senior Staff ML Researcher at Qualcomm AI Research, where I lead research on efficient foundation model adaptation and on-device deployment. This role builds on my deep background in systems architecture. Prior to focusing on AI, I was a Technical Lead for Qualcomm's 5G modem, where I led the architecture and design of first-generation 5G transmitter subsystems. My earlier industry experience at Qualcomm and Intel was centered on power-performance-area (PPA) optimization and low-power ASIC design methodologies, giving me a full-stack perspective from transistors up to algorithms.
+              Currently, I am a Senior Staff ML Researcher at <strong>Qualcomm AI Research</strong>, where I lead research on efficient foundation model adaptation and on-device deployment. This role builds on my deep background in systems architecture. Prior to focusing on AI, I was a <strong>Technical Lead for Qualcomm's 5G modem</strong>, where I led the architecture and design of first-generation 5G transmitter subsystems. My earlier industry experience at <strong>Qualcomm</strong> and <strong>Intel</strong> was centered on power-performance-area (PPA) optimization and low-power ASIC design methodologies, giving me a full-stack perspective from transistors up to algorithms.
             </p>
             <p>
-              I received my PhD in Electrical Engineering from Stanford University, where my research explored agile hardware flows and energy-efficient reconfigurable accelerators. I have remained closely connected to the academic community and am passionate about mentorship and teaching. Since 2022, I have served as part of the Teaching Staff at Stanford for the graduate course "Machine Learning on Embedded Systems," where I develop and deliver lectures on state-of-the-art topics and mentor students on their class projects.
+              I received my PhD in Electrical Engineering from <strong>Stanford University</strong>, where my research explored agile hardware flows and energy-efficient reconfigurable accelerators. I have remained closely connected to the academic community and am passionate about mentorship and teaching. Since 2022, I have served as part of the Teaching Staff at <strong>Stanford</strong> for the graduate course "Machine Learning on Embedded Systems," where I develop and deliver lectures on state-of-the-art topics and mentor students on their class projects.
             </p>
           </div>
         </div>
@@ -80,53 +80,46 @@ Currently, I am a Technical Lead at Qualcomm AI Research, guiding research in on
         <h2 className="mb-8">News & Updates</h2>
         <Card className="p-8">
           <ul className="space-y-4">
-            {[
-              {
-                date: "October 2025",
-                text: "Our paper, \"Video Training without Reasoning,\" was submitted to ICLR 2026."
-              },
-              {
-                date: "October 2025",
-                text: "Our paper \"DuoLoRA\" on content-style personalization was presented at the International Conference on Computer Vision (ICCV) 2025."
-              },
-              {
-                date: "July 2025",
-                text: "Our paper \"QuArch: A Question-Answering Dataset\" was accepted for publication in IEEE Computer Architecture Letters."
-              },
-              {
-                date: "June 2025",
-                text: "I co-organized the Hackathon for LLM-assisted Chip Design (ICLAD) at the Design Automation Conference (DAC 2025)."
-              },
-              {
-                date: "March 2025",
-                text: "I returned to Stanford as a Guest Lecturer for EE272 to speak on neural network quantization."
-              },
-              {
-                date: "January 2025",
-                text: "I am serving on the Technical Program Committee for the TinyML 2025 International Research Symposium."
-              },
-              {
-                date: "May 2024",
-                text: "I gave an invited guest lecture at UC Berkeley (EE290-2) on domain-specific ML acceleration for 5G modems."
-              },
-              {
-                date: "March 2024",
-                text: "I started a new role as a Technical Lead/Senior Staff ML Researcher at Qualcomm AI Research, focusing on on-device generative AI."
-              },
-              {
-                date: "November 2023",
-                text: "I was an invited guest lecturer at the University of Southern California (EE599) to discuss systems-HW co-design."
-              },
-              {
-                date: "June 2023",
-                text: "I gave an invited talk at the On-Device Intelligence Workshop at the MLSys 2023 conference in Miami."
-              },
-            ].map((item, index) => (
-              <li key={index} className="flex gap-4">
-                <span className="font-semibold text-primary min-w-[150px]">{item.date}:</span>
-                <span className="text-foreground">{item.text}</span>
-              </li>
-            ))}
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">October 2025:</span>
+              <span className="text-foreground">Our paper, "Video Training without Reasoning," was submitted to <strong>ICLR 2026</strong>.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">October 2025:</span>
+              <span className="text-foreground">Our paper "DuoLoRA" on content-style personalization was presented at the <strong>International Conference on Computer Vision (ICCV) 2025</strong>.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">July 2025:</span>
+              <span className="text-foreground">Our paper "QuArch: A Question-Answering Dataset" was accepted for publication in <strong>IEEE Computer Architecture Letters</strong>.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">June 2025:</span>
+              <span className="text-foreground">I co-organized the Hackathon for LLM-assisted Chip Design (ICLAD) at the <strong>Design Automation Conference (DAC 2025)</strong>.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">March 2025:</span>
+              <span className="text-foreground">I returned to <strong>Stanford</strong> as a Guest Lecturer for EE272 to speak on neural network quantization.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">January 2025:</span>
+              <span className="text-foreground">I am serving on the Technical Program Committee for the <strong>TinyML 2025 International Research Symposium</strong>.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">May 2024:</span>
+              <span className="text-foreground">I gave an invited guest lecture at <strong>UC Berkeley</strong> (EE290-2) on domain-specific ML acceleration for 5G modems.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">March 2024:</span>
+              <span className="text-foreground">I started a new role as a Technical Lead/Senior Staff ML Researcher at <strong>Qualcomm AI Research</strong>, focusing on on-device generative AI.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">November 2023:</span>
+              <span className="text-foreground">I was an invited guest lecturer at the <strong>University of Southern California</strong> (EE599) to discuss systems-HW co-design.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">June 2023:</span>
+              <span className="text-foreground">I gave an invited talk at the <strong>On-Device Intelligence Workshop</strong> at the <strong>MLSys 2023</strong> conference in Miami.</span>
+            </li>
           </ul>
         </Card>
       </section>
