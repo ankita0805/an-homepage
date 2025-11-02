@@ -37,6 +37,37 @@ const Teaching = () => {
     }
   ];
 
+  const invitedTalks = [
+    {
+      title: "Neural Network Quantization Methods",
+      course: "EE272: Design Projects in VLSI Systems",
+      institution: "Stanford University",
+      role: "Guest Lecturer",
+      semester: "Winter 2022 - 2025"
+    },
+    {
+      title: "Domain-Specific ML acceleration for 5G modems",
+      course: "EE290-2 Hardware for Machine Learning",
+      institution: "University of California, Berkeley",
+      role: "Guest Lecturer",
+      semester: "Spring 2024"
+    },
+    {
+      title: "Systems-HW Co-Design for On-device ML for 5G Modems",
+      course: "EE599: Special Topics on Complex Digital ASIC System Design",
+      institution: "University of Southern California",
+      role: "Guest Lecturer",
+      semester: "Autumn 2023"
+    },
+    {
+      title: "On-Device ML for 5G Modems",
+      course: "On-Device Intelligence Workshop, Sixth Conference on Machine Learning and Systems (MLSys)",
+      institution: "Miami Beach, Florida",
+      role: "Invited Speaker",
+      semester: "June 2023"
+    }
+  ];
+
   return (
     <PageLayout>
       <div className="container mx-auto max-w-6xl px-6 py-16">
@@ -69,6 +100,28 @@ const Teaching = () => {
                   </p>
                 </div>
                 <p className="text-foreground">{course.description}</p>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* Invited Talks */}
+        <section className="mb-16">
+          <h2 className="mb-8">Invited Talks & Guest Lectures</h2>
+          <div className="space-y-4">
+            {invitedTalks.map((talk, index) => (
+              <Card key={index} className="p-6">
+                <div className="space-y-2">
+                  <h3 className="text-lg font-semibold text-foreground">
+                    {talk.title}
+                  </h3>
+                  <p className="text-foreground">
+                    {talk.course}
+                  </p>
+                  <p className="text-muted-foreground">
+                    {talk.institution} | {talk.role} | {talk.semester}
+                  </p>
+                </div>
               </Card>
             ))}
           </div>
