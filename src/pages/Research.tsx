@@ -1,4 +1,5 @@
 import PageLayout from "@/components/PageLayout";
+import SideNav from "@/components/SideNav";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
@@ -36,60 +37,75 @@ const Research = () => {
 
   return (
     <PageLayout>
-      <div className="container mx-auto max-w-6xl px-6 py-16">
+      <div className="container mx-auto max-w-7xl px-6 py-16">
         <h1 className="mb-8">Research</h1>
         
-        {/* Research Overview */}
-        <div className="mb-16">
-          <Card className="p-8">
-            <h2 className="mb-6 text-2xl">Research Overview</h2>
-            <div className="space-y-4 text-foreground">
-              <p>
-                My research program is centered on a fundamental question: How can we design intelligent 
-                systems that operate reliably and efficiently in the most challenging real-world environments? 
-                I approach this question through the lens of biomedical engineering, where the stakes are highest 
-                and the constraints are most severe.
-              </p>
-              <p>
-                By developing novel machine learning algorithms that account for hardware limitations, privacy 
-                requirements, and dynamic environments, my work aims to bridge the gap between theoretical 
-                advances in AI and practical deployment in critical healthcare applications. This research 
-                contributes to both the machine learning community through new algorithmic insights and to the 
-                biomedical engineering field through systems that can improve patient care.
-              </p>
+        <div className="flex gap-12">
+          {/* Main Content */}
+          <div className="flex-1 min-w-0">
+            {/* Research Overview */}
+            <div className="mb-16" id="overview">
+              <Card className="p-8">
+                <h2 className="mb-6 text-2xl">Research Overview</h2>
+                <div className="space-y-4 text-foreground">
+                  <p>
+                    My research program is centered on a fundamental question: How can we design intelligent 
+                    systems that operate reliably and efficiently in the most challenging real-world environments? 
+                    I approach this question through the lens of biomedical engineering, where the stakes are highest 
+                    and the constraints are most severe.
+                  </p>
+                  <p>
+                    By developing novel machine learning algorithms that account for hardware limitations, privacy 
+                    requirements, and dynamic environments, my work aims to bridge the gap between theoretical 
+                    advances in AI and practical deployment in critical healthcare applications. This research 
+                    contributes to both the machine learning community through new algorithmic insights and to the 
+                    biomedical engineering field through systems that can improve patient care.
+                  </p>
+                </div>
+              </Card>
             </div>
-          </Card>
-        </div>
 
-        {/* Projects */}
-        <h2 className="mb-8">Research Projects</h2>
-        <div className="space-y-12">
-          {projects.map((project, index) => (
-            <Card key={index} className="p-8">
-              <h3 className="mb-6">{project.title}</h3>
-              <div className="space-y-4 text-foreground mb-6">
-                {project.description.map((paragraph, pIndex) => (
-                  <p key={pIndex}>{paragraph}</p>
+            {/* Projects */}
+            <div id="projects">
+              <h2 className="mb-8">Research Projects</h2>
+              <div className="space-y-12">
+                {projects.map((project, index) => (
+                  <Card key={index} className="p-8">
+                    <h3 className="mb-6">{project.title}</h3>
+                    <div className="space-y-4 text-foreground mb-6">
+                      {project.description.map((paragraph, pIndex) => (
+                        <p key={pIndex}>{paragraph}</p>
+                      ))}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="text-sm font-semibold text-muted-foreground">Related Publications:</span>
+                      {project.publications.map((pub, pIndex) => (
+                        <Button
+                          key={pIndex}
+                          variant="outline"
+                          size="sm"
+                          className="rounded"
+                          asChild
+                        >
+                          <a href="/publications">
+                            {pub} <ExternalLink className="ml-2 h-3 w-3" />
+                          </a>
+                        </Button>
+                      ))}
+                    </div>
+                  </Card>
                 ))}
               </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-sm font-semibold text-muted-foreground">Related Publications:</span>
-                {project.publications.map((pub, pIndex) => (
-                  <Button
-                    key={pIndex}
-                    variant="outline"
-                    size="sm"
-                    className="rounded"
-                    asChild
-                  >
-                    <a href="/publications">
-                      {pub} <ExternalLink className="ml-2 h-3 w-3" />
-                    </a>
-                  </Button>
-                ))}
-              </div>
-            </Card>
-          ))}
+            </div>
+          </div>
+
+          {/* Side Navigation */}
+          <SideNav
+            items={[
+              { id: "overview", label: "Research Overview" },
+              { id: "projects", label: "Research Projects" },
+            ]}
+          />
         </div>
       </div>
     </PageLayout>

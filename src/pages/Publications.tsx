@@ -1,4 +1,5 @@
 import PageLayout from "@/components/PageLayout";
+import SideNav from "@/components/SideNav";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, ExternalLink, Code, FileImage } from "lucide-react";
@@ -185,40 +186,54 @@ const Publications = () => {
 
   return (
     <PageLayout>
-      <div className="container mx-auto max-w-6xl px-6 py-16">
+      <div className="container mx-auto max-w-7xl px-6 py-16">
         <h1 className="mb-12">Publications</h1>
 
-        {/* Submissions */}
-        {submissions.length > 0 && (
-          <section className="mb-16">
-            <h2 className="mb-8">Under Submission</h2>
-            <div className="space-y-4">
-              {submissions.map((pub, index) => (
-                <PublicationCard key={index} pub={pub} type="submission" />
-              ))}
-            </div>
-          </section>
-        )}
+        <div className="flex gap-12">
+          {/* Main Content */}
+          <div className="flex-1 min-w-0">
+            {/* Submissions */}
+            {submissions.length > 0 && (
+              <section className="mb-16" id="submissions">
+                <h2 className="mb-8">Under Submission</h2>
+                <div className="space-y-4">
+                  {submissions.map((pub, index) => (
+                    <PublicationCard key={index} pub={pub} type="submission" />
+                  ))}
+                </div>
+              </section>
+            )}
 
-        {/* Journal Articles */}
-        <section className="mb-16">
-          <h2 className="mb-8">Journal Articles</h2>
-          <div className="space-y-4">
-            {journals.map((pub, index) => (
-              <PublicationCard key={index} pub={pub} type="journal" />
-            ))}
-          </div>
-        </section>
+            {/* Journal Articles */}
+            <section className="mb-16" id="journals">
+              <h2 className="mb-8">Journal Articles</h2>
+              <div className="space-y-4">
+                {journals.map((pub, index) => (
+                  <PublicationCard key={index} pub={pub} type="journal" />
+                ))}
+              </div>
+            </section>
 
-        {/* Conference Papers */}
-        <section>
-          <h2 className="mb-8">Peer-Reviewed Conference Proceedings</h2>
-          <div className="space-y-4">
-            {conferences.map((pub, index) => (
-              <PublicationCard key={index} pub={pub} type="conference" />
-            ))}
+            {/* Conference Papers */}
+            <section id="conferences">
+              <h2 className="mb-8">Peer-Reviewed Conference Proceedings</h2>
+              <div className="space-y-4">
+                {conferences.map((pub, index) => (
+                  <PublicationCard key={index} pub={pub} type="conference" />
+                ))}
+              </div>
+            </section>
           </div>
-        </section>
+
+          {/* Side Navigation */}
+          <SideNav
+            items={[
+              { id: "submissions", label: "Under Submission" },
+              { id: "journals", label: "Journal Articles" },
+              { id: "conferences", label: "Conference Proceedings" },
+            ]}
+          />
+        </div>
       </div>
     </PageLayout>
   );
