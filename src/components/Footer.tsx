@@ -1,4 +1,4 @@
-import { Linkedin, GraduationCap, Github } from "lucide-react";
+import { Linkedin, GraduationCap } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -29,15 +29,6 @@ const Footer = () => {
               aria-label="Google Scholar Profile"
             >
               <GraduationCap className="h-5 w-5" />
-            </a>
-            <a
-              href="https://github.com/yourprofile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="GitHub Profile"
-            >
-              <Github className="h-5 w-5" />
             </a>
           </div>
         </div>
