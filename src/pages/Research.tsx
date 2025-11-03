@@ -49,17 +49,10 @@ const Research = () => {
                 <h2 className="mb-6 text-2xl">Research Overview</h2>
                 <div className="space-y-4 text-foreground">
                   <p>
-                    My research program is centered on a fundamental question: How can we design intelligent 
-                    systems that operate reliably and efficiently in the most challenging real-world environments? 
-                    I approach this question through the lens of biomedical engineering, where the stakes are highest 
-                    and the constraints are most severe.
+                    The dominant paradigm of AI today remains tethered to the cloud, a model optimized for abundant resources rather than the constraints of the physical world. This creates a fundamental disconnect, as the real world is distributed, resource-limited, and privacy-sensitive. For intelligence to be truly integrated into our daily lives, it must perceive, reason, and act autonomously at the data source—operating under strict limits of latency, privacy, and energy that cloud-centric models cannot meet. The high-level vision of this research is to move beyond "scaled-down" cloud AI and establish a new science of "adaptive intelligence," enabling systems that learn from, adapt to, and act within the physical world they inhabit.
                   </p>
                   <p>
-                    By developing novel machine learning algorithms that account for hardware limitations, privacy 
-                    requirements, and dynamic environments, my work aims to bridge the gap between theoretical 
-                    advances in AI and practical deployment in critical healthcare applications. This research 
-                    contributes to both the machine learning community through new algorithmic insights and to the 
-                    biomedical engineering field through systems that can improve patient care.
+                    To achieve this, the research tackles three core bottlenecks that currently prevent truly efficient and adaptive edge AI. First, it addresses the shift from static, train-once models to dynamic, personalized intelligence that can continuously learn from user interaction in real-time. Second, it aims to break the rigid trade-off between model capability and efficiency, which currently forces edge applications to compromise on performance. Finally, this work seeks to unify the siloed fields of algorithm design and hardware architecture—a disconnect that creates massive inefficiencies—by pioneering a full-stack approach built on algorithm-hardware co-evolution.
                   </p>
                 </div>
               </Card>
