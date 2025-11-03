@@ -85,18 +85,6 @@ const Teaching = () => {
         <div className="flex gap-12">
           {/* Main Content */}
           <div className="flex-1 min-w-0">
-            {/* Teaching Philosophy */}
-            <section className="mb-16" id="philosophy">
-              <Card className="p-8">
-                <h2 className="mb-6 text-2xl">Teaching Philosophy</h2>
-                <div className="space-y-4 text-foreground">
-                  <p>
-                    My teaching philosophy rests on three foundational pillars: learning from first principles, learning through narrative, and learning by practice. I prioritize deconstructing complex topics to their conceptual core, ensuring students move beyond the "how" to a durable appreciation of the "why," which fosters critical, trend-resistant reasoning. This is complemented by framing lectures as engaging narratives that explore a problem's context, solution, and design, transforming passive learning into an interactive exploration that builds deep intuition. Finally, I champion learning by doing, guiding students through iterative, hands-on problem-solving to build tangible skills and confidence as they connect abstract theory to practical application.
-                  </p>
-                </div>
-              </Card>
-            </section>
-
             {/* Teaching Experience */}
             <section className="mb-16" id="experience">
               <h2 className="mb-8">Teaching Experience</h2>
@@ -138,30 +126,13 @@ const Teaching = () => {
                 ))}
               </div>
             </section>
-
-            {/* Mentoring */}
-            <section id="mentoring">
-              <Card className="p-8">
-                <h2 className="mb-6 text-2xl">Mentoring & Advising</h2>
-                <div className="space-y-4 text-foreground">
-                  <p>
-                  My mentoring philosophy is centered on a <strong>personalized</strong>, <strong>development-focused</strong>, and <strong>inclusive</strong> approach. I believe this method brings out the best in individuals by empowering them to pursue their own paths and contribute meaningfully to their chosen fields. I view every mentoring relationship as unique, defined by the mentee's goals and stage of growth, and I emphasize <strong>active listening</strong> and <strong>tailored guidance</strong> to help them chart their path. I see mentorship as a process of <strong>guided growth</strong>, helping mentees evolve from learners into <strong>independent thinkers</strong>. I also believe that innovation thrives on <strong>diverse perspectives</strong>, so I am committed to creating an inclusive space where every voice can be heard, valued, and given the confidence to realize its potential.
-                  </p>
-                  <p>
-                  I have gained mentoring experience across <strong>academic and industry settings</strong>. As a Teaching Assistant for courses like introductory programming, I learned to adapt to each student's learning style. I currently apply this by mentoring project teams in <strong>EE292D</strong>, where our meetings extend beyond project milestones to include broader academic and career discussions. At <strong>Qualcomm AI Research</strong>, mentorship has been a highly rewarding part of my work; I guide individuals on technical concepts and career development, which has led to <strong>commercial successes</strong> and <strong>published research</strong>. Over more than a decade, many of my mentees have advanced into <strong>technical leadership</strong>, pursued <strong>Ph.D.s</strong>, or secured <strong>faculty positions</strong>. I also serve as an <strong>industry affiliate</strong> with various academic institutions to help align their research with real-world applications. Furthermore, I actively mentor women and junior engineers in STEM through initiatives like <strong>TechWomen</strong> (a U.S. State Department initiative for women in emerging regions) and <strong>QWISE</strong> (Qualcomm Women in Science & Engineering), supporting their career navigation and leadership development.
-                  </p>
-                </div>
-              </Card>
-            </section>
           </div>
 
           {/* Side Navigation */}
           <SideNav
             items={[
-              { id: "philosophy", label: "Teaching Philosophy" },
               { id: "experience", label: "Teaching Experience" },
               { id: "talks", label: "Invited Talks" },
-              { id: "mentoring", label: "Mentoring & Advising" },
             ]}
           />
         </div>
