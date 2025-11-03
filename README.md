@@ -1,73 +1,112 @@
-# Welcome to your Lovable project
+# Ankita Nayak - Academic Homepage
 
-## Project info
+This is the source code for Dr. Ankita Nayak's professional academic website.
 
-**URL**: https://lovable.dev/projects/8164aaa7-aa42-4a5f-8309-acf8477abce1
+**Live Site**: https://ankita0805.github.io/an-homepage/
 
-## How can I edit this code?
+## Project Setup
 
-There are several ways of editing your application.
+### Prerequisites
 
-**Use Lovable**
+- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8164aaa7-aa42-4a5f-8309-acf8477abce1) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Local Development
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/ankita0805/an-homepage.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd an-homepage
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The site will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** - Build tool and development server
+- **TypeScript** - Type-safe JavaScript
+- **React 18** - UI framework
+- **React Router v6** - Client-side routing
+- **shadcn/ui** - Component library
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Icon library
 
-## How can I deploy this project?
+## Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/8164aaa7-aa42-4a5f-8309-acf8477abce1) and click on Share -> Publish.
+The site is automatically deployed to GitHub Pages using GitHub Actions.
 
-## Can I connect a custom domain to my Lovable project?
+### Automatic Deployment
 
-Yes, you can!
+Every push to the `main` branch triggers a GitHub Actions workflow that:
+1. Builds the Vite project
+2. Deploys the `dist` folder to GitHub Pages
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+You can monitor deployments at: https://github.com/ankita0805/an-homepage/actions
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Manual Build
+
+To build the project locally:
+
+```sh
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Project Structure
+
+```
+├── src/
+│   ├── assets/          # Images and static files
+│   ├── components/      # Reusable React components
+│   │   ├── ui/         # shadcn/ui components
+│   │   ├── Header.tsx  # Navigation header
+│   │   ├── Footer.tsx  # Site footer
+│   │   └── SideNav.tsx # Side navigation for long pages
+│   ├── pages/          # Page components
+│   │   ├── Home.tsx
+│   │   ├── Research.tsx
+│   │   ├── Publications.tsx
+│   │   ├── Patents.tsx
+│   │   ├── Teaching.tsx
+│   │   └── CV.tsx
+│   ├── App.tsx         # Main app component with routing
+│   └── main.tsx        # Application entry point
+├── public/             # Static assets
+└── index.html          # HTML template
+
+```
+
+## Making Updates
+
+### Content Updates
+
+- **Home page**: Edit `src/pages/Home.tsx`
+- **Research**: Edit `src/pages/Research.tsx`
+- **Publications**: Edit `src/pages/Publications.tsx`
+- **Patents**: Edit `src/pages/Patents.tsx`
+- **Teaching**: Edit `src/pages/Teaching.tsx`
+- **CV**: Edit `src/pages/CV.tsx`
+
+### Profile Photo
+
+Replace `src/assets/headshot.jpg` with your new photo.
+
+### Styling
+
+- Global styles: `src/index.css`
+- Tailwind configuration: `tailwind.config.ts`
+- Component styles: Inline Tailwind classes
+
+## License
+
+© 2025 Ankita Nayak. All rights reserved.
