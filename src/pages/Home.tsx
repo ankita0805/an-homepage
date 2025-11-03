@@ -28,7 +28,7 @@ const Home = () => {
             <p className="text-lg text-foreground leading-relaxed">
             I am a researcher focused on efficient, on-device artificial intelligence. My work develops novel algorithms for <strong>generative AI</strong>, <strong>efficient fine-tuning</strong>, and <strong>on-device personalization</strong> and co-designs the ML systems and hardware—including <strong>model quantization</strong> and <strong>accelerators</strong>—needed to deploy them.
 <br /><br />
-Currently, I am a Technical Lead at <strong>Qualcomm AI Research</strong>, guiding research in on-device generative AI. I received my PhD in Electrical Engineering from <strong>Stanford University</strong>, where I continue to serve as Teaching Staff for the Machine Learning on Embedded Systems course. My goal is to bridge the gap between large-scale AI models and practical, low-power systems.
+Currently, I am a Senior Staff ML Researcher and Technical Lead at <strong>Qualcomm AI Research</strong>, guiding research in on-device generative AI. I received my PhD in Electrical Engineering from <strong>Stanford University</strong>, where I continue to serve as Teaching Staff for the Machine Learning on Embedded Systems course. My goal is to bridge the gap between large-scale AI models and practical, low-power systems.
             </p>
             
             <div className="flex gap-6 pt-4">
