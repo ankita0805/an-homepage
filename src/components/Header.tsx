@@ -10,7 +10,6 @@ const Header = () => {
     { path: "/publications", label: "Publications" },
     { path: "/patents", label: "Patents" },
     { path: "/teaching", label: "Teaching" },
-    { path: "/cv", label: "CV" },
   ];
 
   return (
