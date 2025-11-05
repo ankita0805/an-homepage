@@ -81,7 +81,7 @@ Currently, I am a Senior Staff ML Researcher and Technical Lead at <strong>Qualc
         <Card className="p-8">
           <ul className="space-y-4">
             <li className="flex gap-4">
-              <span className="font-semibold text-primary min-w-[150px]">October 2025:</span>
+              <span className="font-semibold text-primary min-w-[150px]">September 2025:</span>
               <span className="text-foreground">Our paper, "Video Training without Reasoning," was submitted to <strong>ICLR 2026</strong>.</span>
             </li>
             <li className="flex gap-4">
