@@ -204,22 +204,22 @@ const Publications = () => {
               </section>
             )}
 
-            {/* Journal Articles */}
-            <section className="mb-16" id="journals">
-              <h2 className="mb-8">Journal Articles</h2>
-              <div className="space-y-4">
-                {journals.map((pub, index) => (
-                  <PublicationCard key={index} pub={pub} type="journal" />
-                ))}
-              </div>
-            </section>
-
             {/* Conference Papers */}
-            <section id="conferences">
+            <section className="mb-16" id="conferences">
               <h2 className="mb-8">Peer-Reviewed Conference Proceedings</h2>
               <div className="space-y-4">
                 {conferences.map((pub, index) => (
                   <PublicationCard key={index} pub={pub} type="conference" />
+                ))}
+              </div>
+            </section>
+
+            {/* Journal Articles */}
+            <section id="journals">
+              <h2 className="mb-8">Journal Articles</h2>
+              <div className="space-y-4">
+                {journals.map((pub, index) => (
+                  <PublicationCard key={index} pub={pub} type="journal" />
                 ))}
               </div>
             </section>
@@ -229,8 +229,8 @@ const Publications = () => {
           <SideNav
             items={[
               { id: "submissions", label: "Under Submission" },
-              { id: "journals", label: "Journal Articles" },
               { id: "conferences", label: "Conference Proceedings" },
+              { id: "journals", label: "Journal Articles" },
             ]}
           />
         </div>
