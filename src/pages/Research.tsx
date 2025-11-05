@@ -16,7 +16,7 @@ const Research = () => {
             <div className="mb-16" id="overview">
               <Card className="p-8">
                 <h2 className="mb-6 text-2xl">Research Overview</h2>
-                <div className="space-y-4 text-foreground">
+                <div className="space-y-4 text-foreground text-center">
                   <p>
                     The dominant paradigm of AI today remains tethered to the cloud, a model optimized for abundant resources rather than the constraints of the physical world. This creates a fundamental disconnect, as the real world is distributed, resource limited, and privacy sensitive. For intelligence to be truly integrated into our daily lives, it must perceive, reason, and act autonomously at the data source, operating under strict limits of latency, privacy, and energy that cloud-centric models cannot meet. The high-level vision of my research is to move beyond "scaled-down" cloud AI and establish a new science of "adaptive intelligence," enabling systems that learn from, adapt to, and act within the physical world they inhabit.
                   </p>

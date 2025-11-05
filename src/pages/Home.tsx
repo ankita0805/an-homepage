@@ -81,23 +81,27 @@ Currently, I am a Senior Staff ML Researcher and Technical Lead at <strong>Qualc
         <Card className="p-8">
           <ul className="space-y-4">
             <li className="flex gap-4">
-              <span className="font-semibold text-primary min-w-[150px]">September 2025:</span>
-              <span className="text-foreground">Our paper, "Video Training without Reasoning," was submitted to <strong>ICLR 2026</strong>.</span>
-            </li>
-            <li className="flex gap-4">
               <span className="font-semibold text-primary min-w-[150px]">October 2025:</span>
               <span className="text-foreground">Our paper "DuoLoRA" on content-style personalization was presented at the <strong>International Conference on Computer Vision (ICCV) 2025</strong>.</span>
             </li>
             <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">September 2025:</span>
+              <span className="text-foreground">Our paper, "Video Training without Reasoning," was submitted to <strong>ICLR 2026</strong>.</span>
+            </li>
+            <li className="flex gap-4">
               <span className="font-semibold text-primary min-w-[150px]">July 2025:</span>
-              <span className="text-foreground">Our paper "QuArch: A Question-Answering Dataset" was accepted for publication in <strong>IEEE Computer Architecture Letters</strong>.</span>
+              <span className="text-foreground">Our paper "QuArch: A Question-Answering Dataset for AI Agents in Computer Architecture" was accepted for publication in <strong>IEEE Computer Architecture Letters</strong>.</span>
             </li>
             <li className="flex gap-4">
               <span className="font-semibold text-primary min-w-[150px]">June 2025:</span>
-              <span className="text-foreground">I co-organized the Hackathon for LLM-assisted Chip Design (ICLAD) at the <strong>Design Automation Conference (DAC 2025)</strong>.</span>
+              <span className="text-foreground">I participated in organizing the Hackathon for LLM-assisted Chip Design (ICLAD) at the <strong>Design Automation Conference (DAC 2025)</strong>.</span>
             </li>
             <li className="flex gap-4">
-              <span className="font-semibold text-primary min-w-[150px]">March 2025:</span>
+              <span className="font-semibold text-primary min-w-[150px]">April 2025:</span>
+              <span className="text-foreground">I returned to <strong>Stanford</strong> to teach <strong>EE292D/CS329E: Machine Learning on Embedded Systems</strong>.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="font-semibold text-primary min-w-[150px]">January 2025:</span>
               <span className="text-foreground">I returned to <strong>Stanford</strong> as a Guest Lecturer for EE272 to speak on neural network quantization.</span>
             </li>
             <li className="flex gap-4">
