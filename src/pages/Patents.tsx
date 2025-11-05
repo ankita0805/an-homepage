@@ -10,12 +10,6 @@ const Patents = () => {
       year: "2025"
     },
     {
-      title: "Power-Density-based Clock Cell Spacing",
-      status: "U.S. Patent 9824174",
-      company: "Qualcomm Inc.",
-      year: "2017"
-    },
-    {
       title: "Video Reasoning without Training",
       status: "Patent pending",
       company: "Qualcomm Inc."
@@ -69,6 +63,12 @@ const Patents = () => {
       title: "Quantized Neural Network Architecture",
       status: "U.S. Patent Application 17934476",
       company: "Qualcomm Inc."
+    },
+    {
+      title: "Power-Density-based Clock Cell Spacing",
+      status: "U.S. Patent 9824174",
+      company: "Qualcomm Inc.",
+      year: "2017"
     }
   ];
 
