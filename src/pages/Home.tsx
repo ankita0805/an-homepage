@@ -1,6 +1,6 @@
 import PageLayout from "@/components/PageLayout";
 import { Card } from "@/components/ui/card";
-import { Linkedin, GraduationCap } from "lucide-react";
+import { Linkedin, GraduationCap, Mail } from "lucide-react";
 import headshotImage from "@/assets/headshot.jpg";
 
 const Home = () => {
@@ -9,13 +9,26 @@ const Home = () => {
       {/* Hero Section */}
       <section className="container mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-[1fr,2fr] items-center">
-          <div className="flex flex-col items-center gap-6">
+          <div className="flex justify-center">
             <img
               src={headshotImage}
               alt="Professional headshot"
               className="rounded-lg shadow-lg w-full max-w-sm object-cover aspect-square"
             />
-            <div className="flex gap-6">
+          </div>
+          
+          <div className="space-y-6">
+            <div>
+              <h1 className="mb-2">Ankita Nayak</h1>
+              <h2 className="text-lg md:text-xl text-muted-foreground font-body font-medium">
+                Technical Lead/Senior Staff ML Researcher, Qualcomm AI Research
+              </h2>
+              <h3 className="text-lg md:text-xl text-muted-foreground font-body font-medium mt-2">
+                Ph.D. in Electrical Engineering, Stanford University
+              </h3>
+            </div>
+            
+            <div className="flex gap-6 pt-4">
               <a
                 href="https://www.linkedin.com/in/nayak-ankita/"
                 target="_blank"
@@ -36,18 +49,14 @@ const Home = () => {
                 <GraduationCap className="h-5 w-5" />
                 <span>Google Scholar</span>
               </a>
-            </div>
-          </div>
-          
-          <div className="space-y-6">
-            <div>
-              <h1 className="mb-2">Ankita Nayak</h1>
-              <h2 className="text-lg md:text-xl text-muted-foreground font-body font-medium">
-                Technical Lead/Senior Staff ML Researcher, Qualcomm AI Research
-              </h2>
-              <h3 className="text-lg md:text-xl text-muted-foreground font-body font-medium mt-2">
-                Ph.D. in Electrical Engineering, Stanford University
-              </h3>
+              <a
+                href="mailto:ankitan@alumni.stanford.edu"
+                className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+                aria-label="Email"
+              >
+                <Mail className="h-5 w-5" />
+                <span>Email</span>
+              </a>
             </div>
             
             {/* <p className="text-lg text-foreground leading-relaxed">
