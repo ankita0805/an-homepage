@@ -42,11 +42,11 @@ const Home = () => {
           <div className="space-y-6">
             <div>
               <h1 className="mb-2">Ankita Nayak</h1>
-              <h2 className="text-xl md:text-2xl text-muted-foreground font-body font-medium">
-                Ph.D. in Electrical Engineering, Stanford University
+              <h2 className="text-lg md:text-xl text-muted-foreground font-body font-medium">
+                Technical Lead/Senior Staff ML Researcher, Qualcomm AI Research
               </h2>
               <h3 className="text-lg md:text-xl text-muted-foreground font-body font-medium mt-2">
-                Technical Lead/Senior Staff ML Researcher, Qualcomm AI Research
+                Ph.D. in Electrical Engineering, Stanford University
               </h3>
             </div>
             
