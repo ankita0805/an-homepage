@@ -26,12 +26,31 @@ const Research = () => {
                 </div>
               </Card>
             </div>
+
+            {/* Research Areas */}
+            <div className="mb-16" id="areas">
+              <Card className="p-8">
+                <h2 className="mb-6 text-2xl">Research Areas</h2>
+                <div className="space-y-4 text-foreground">
+                  <div>
+                    <strong>• ML Algorithms:</strong> Generative AI, Efficient Fine-Tuning, On-Device Learning, Test-time Training Free Personalization.
+                  </div>
+                  <div>
+                    <strong>• ML Systems:</strong> Generative Model Efficiency, Model Quantization, Efficient Inference, Hardware-Aware System Optimization.
+                  </div>
+                  <div>
+                    <strong>• ML Hardware:</strong> Low-Power AI, ML Accelerators, Agile HW Flow.
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
 
           {/* Side Navigation */}
           <SideNav
             items={[
               { id: "overview", label: "Research Overview" },
+              { id: "areas", label: "Research Areas" },
             ]}
           />
         </div>
