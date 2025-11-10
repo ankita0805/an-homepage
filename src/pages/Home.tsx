@@ -43,8 +43,11 @@ const Home = () => {
             <div>
               <h1 className="mb-2">Ankita Nayak</h1>
               <h2 className="text-xl md:text-2xl text-muted-foreground font-body font-medium">
-                Ph.D. in Electrical Engineering
+                Ph.D. in Electrical Engineering, Stanford University
               </h2>
+              <h3 className="text-lg md:text-xl text-muted-foreground font-body font-medium mt-2">
+                Technical Lead/Senior Staff ML Researcher, Qualcomm AI Research
+              </h3>
             </div>
             
             {/* <p className="text-lg text-foreground leading-relaxed">
