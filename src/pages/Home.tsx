@@ -9,29 +9,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="container mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-[1fr,2fr] items-center">
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center gap-6">
             <img
               src={headshotImage}
               alt="Professional headshot"
               className="rounded-lg shadow-lg w-full max-w-sm object-cover aspect-square"
             />
-          </div>
-          
-          <div className="space-y-6">
-            <div>
-              <h1 className="mb-2">Ankita Nayak</h1>
-              <h2 className="text-xl md:text-2xl text-muted-foreground font-body font-medium">
-                Ph.D. in Electrical Engineering
-              </h2>
-            </div>
-            
-            <p className="text-lg text-foreground leading-relaxed">
-            I am a researcher focused on efficient, on device artificial intelligence. My work develops novel algorithms for <strong>generative AI</strong>, <strong>efficient fine tuning</strong>, and <strong>on device personalization</strong> and co-designs the ML systems and hardware, including <strong>model quantization</strong> and <strong>accelerators</strong>, needed to deploy them.
-<br /><br />
-Currently, I am a Senior Staff ML Researcher and Technical Lead at <strong>Qualcomm AI Research</strong>, guiding research in on device generative AI. I received my PhD in Electrical Engineering from <strong>Stanford University</strong>, where I continue to serve as Teaching Staff for the Machine Learning on Embedded Systems course. My goal is to bridge the gap between large scale AI models and practical, low-power systems.
-            </p>
-            
-            <div className="flex gap-6 pt-4">
+            <div className="flex gap-6">
               <a
                 href="https://www.linkedin.com/in/nayak-ankita/"
                 target="_blank"
@@ -53,6 +37,21 @@ Currently, I am a Senior Staff ML Researcher and Technical Lead at <strong>Qualc
                 <span>Google Scholar</span>
               </a>
             </div>
+          </div>
+          
+          <div className="space-y-6">
+            <div>
+              <h1 className="mb-2">Ankita Nayak</h1>
+              <h2 className="text-xl md:text-2xl text-muted-foreground font-body font-medium">
+                Ph.D. in Electrical Engineering
+              </h2>
+            </div>
+            
+            <p className="text-lg text-foreground leading-relaxed">
+            I am a researcher focused on efficient, on device artificial intelligence. My work develops novel algorithms for <strong>generative AI</strong>, <strong>efficient fine tuning</strong>, and <strong>on device personalization</strong> and co-designs the ML systems and hardware, including <strong>model quantization</strong> and <strong>accelerators</strong>, needed to deploy them.
+<br /><br />
+Currently, I am a Senior Staff ML Researcher and Technical Lead at <strong>Qualcomm AI Research</strong>, guiding research in on device generative AI. I received my PhD in Electrical Engineering from <strong>Stanford University</strong>, where I continue to serve as Teaching Staff for the Machine Learning on Embedded Systems course. My goal is to bridge the gap between large scale AI models and practical, low-power systems.
+            </p>
           </div>
         </div>
       </section>
