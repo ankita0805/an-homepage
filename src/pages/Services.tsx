@@ -2,11 +2,11 @@ import PageLayout from "@/components/PageLayout";
 import SideNav from "@/components/SideNav";
 import { Card } from "@/components/ui/card";
 
-const Service = () => {
+const Services = () => {
   return (
     <PageLayout>
       <div className="container mx-auto max-w-7xl px-6 py-16">
-        <h1 className="mb-12">Service</h1>
+        <h1 className="mb-12">Services</h1>
         
         <div className="flex gap-12">
           {/* Main Content */}
@@ -77,5 +77,5 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Services;
 
