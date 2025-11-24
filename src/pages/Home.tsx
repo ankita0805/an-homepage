@@ -91,11 +91,6 @@ Currently, I am a Senior Staff ML Researcher and Technical Lead at <strong>Qualc
         <h2 className="mb-8">News & Updates</h2>
         <Card className="p-8">
           <ul className="space-y-4">
-            {/*<li className="flex gap-4">
-              <span className="font-semibold text-primary min-w-[150px]">November 2025:</span>
-              <span className="text-foreground">Our paper "SubZero: Composing Subject, Style, and Action via Zero-Shot Personalization" was accepted for publication in <strong>IEEE Winter Conference on Applications of Computer Vision (WACV) 2026</strong>.</span>
-            */}
-            </li>
             <li className="flex gap-4">
               <span className="font-semibold text-primary min-w-[150px]">October 2025:</span>
               <span className="text-foreground">Our paper "DuoLoRA" on content-style personalization was presented at the <strong>International Conference on Computer Vision (ICCV) 2025</strong>.</span>
