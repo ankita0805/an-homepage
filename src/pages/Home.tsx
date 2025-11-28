@@ -21,7 +21,7 @@ const Home = () => {
             <div>
               <h1 className="mb-2">Ankita Nayak</h1>
               <h2 className="text-lg md:text-xl text-muted-foreground font-body font-medium">
-                #Technical Lead/Senior Staff ML Researcher, Qualcomm AI Research
+               {/* Technical Lead/Senior Staff ML Researcher, Qualcomm AI Research */}
                 Principal ML Researcher (Director), Qualcomm AI Research
               </h2>
               <h3 className="text-lg md:text-xl text-muted-foreground font-body font-medium mt-2">
